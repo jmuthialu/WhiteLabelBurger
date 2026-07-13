@@ -42,11 +42,7 @@
       "reactCompiler": true
     },
     "extra": {
-      "brandId": "mcd",
-      "router": {},
-      "eas": {
-        "projectId": "3446604e-d532-4c4c-966f-963d3c4564dd"
-      }
+      "brandId": "mcd"
     }
   }
 }

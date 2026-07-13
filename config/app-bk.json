@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "McDonalds",
-    "slug": "McDonalds",
+    "name": "BurgerKing",
+    "slug": "BurgerKing",
     "version": "1.0.0",
     "orientation": "portrait",
-    "scheme": "McDonalds",
+    "scheme": "BurgerKing",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/brands/mcd/icon.png",
-      "bundleIdentifier": "com.jmuthialu.burgerplace.mcd",
+      "icon": "./assets/brands/bk/icon.png",
+      "bundleIdentifier": "com.jmuthialu.burgerplace.bk",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
@@ -42,11 +42,7 @@
       "reactCompiler": true
     },
     "extra": {
-      "brandId": "mcd",
-      "router": {},
-      "eas": {
-        "projectId": "3446604e-d532-4c4c-966f-963d3c4564dd"
-      }
+      "brandId": "bk"
     }
   }
 }

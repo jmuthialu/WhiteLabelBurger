@@ -2,14 +2,17 @@
   "name": "whitelabelburger",
   "main": "expo-router/entry",
   "version": "1.0.0",
-    "scripts": {
-    "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
+  "scripts": {
+    "ios:mcd": "rm -rf ios && node ./scripts/switch-appJSON.js mcd && expo run:ios --device",
+    "ios:bk": "rm -rf ios && node ./scripts/switch-appJSON.js bk && expo run:ios --device",
+    "start:mcd": "node ./scripts/switch-appJSON.js mcd && expo start",
+    "start:bk": "node ./scripts/sswitch-appJSON.js bk && expo start",
+    "iosbuild:mcd": "node ./scripts/switch-appJSON.js mcd && node ./scripts/switch-credentials.js mcd && eas build --platform ios --profile development",
+    "iosbuild:bk": "node ./scripts/switch-appJSON.js bk && node ./scripts/switch-credentials.js bk && eas build --platform ios --profile development",
     "android": "expo run:android",
-    "ios": "expo run:ios --device",
     "web": "expo start --web",
-    "iosbuild": "eas build --platform ios --profile development",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "reset-project": "node ./scripts/reset-project.js"
   },
   "dependencies": {
     "@expo/ui": "~57.0.4",
