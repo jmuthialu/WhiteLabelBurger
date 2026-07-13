@@ -2,10 +2,20 @@
   "name": "whitelabelburger",
   "main": "expo-router/entry",
   "version": "1.0.0",
+    "scripts": {
+    "start": "expo start",
+    "reset-project": "node ./scripts/reset-project.js",
+    "android": "expo run:android",
+    "ios": "expo run:ios --device",
+    "web": "expo start --web",
+    "iosbuild": "eas build --platform ios --profile development",
+    "lint": "expo lint"
+  },
   "dependencies": {
     "@expo/ui": "~57.0.4",
     "expo": "~57.0.4",
     "expo-constants": "~57.0.3",
+    "expo-dev-client": "~57.0.5",
     "expo-device": "~57.0.0",
     "expo-font": "~57.0.0",
     "expo-glass-effect": "~57.0.0",
@@ -30,14 +40,6 @@
   "devDependencies": {
     "@types/react": "~19.2.2",
     "typescript": "~6.0.3"
-  },
-  "scripts": {
-    "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "lint": "expo lint"
   },
   "private": true
 }

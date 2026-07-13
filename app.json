@@ -1,14 +1,18 @@
 {
   "expo": {
-    "name": "WhiteLabelBurger",
-    "slug": "WhiteLabelBurger",
+    "name": "MCDWhiteLabelBurger",
+    "slug": "MCDWhiteLabelBurger",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "whitelabelburger",
+    "scheme": "MCDWhiteLabelBurger",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/images/icon.png",
+      "bundleIdentifier": "com.mcd.WhiteLabelBurger",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -37,6 +41,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "01837590-9691-428d-b3c8-ac11ba0b45b0"
+      }
     }
   }
 }
