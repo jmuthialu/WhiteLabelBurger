@@ -12,8 +12,8 @@ if (!brandId) {
 }
 
 const brandConfigMap = {
-  mcd: 'config/app-mcd.json',
-  bk: 'config/app-bk.json'
+  mcd: 'src/config/credentials-mcd.json',
+  bk: 'src/config/credentials-bk.json'
 };
 
 const configFile = brandConfigMap[brandId];
@@ -23,9 +23,9 @@ if (!configFile) {
   process.exit(1);
 }
 
-const projectRoot = path.join(__dirname, '..');
+const projectRoot = path.join(__dirname, '../..');
 const sourceFile = path.join(projectRoot, configFile);
-const targetFile = path.join(projectRoot, 'app.json');
+const targetFile = path.join(projectRoot, 'credentials.json');
 
 if (!fs.existsSync(sourceFile)) {
   console.error(`Configuration file not found: ${sourceFile}`);

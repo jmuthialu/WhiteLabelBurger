@@ -1,5 +1,6 @@
+import { useBrand } from "@/components/BrandProvider";
 import { StyleSheet, Text, View } from "react-native";
-import { useBrand } from "../../components/BrandProvider";
+
 
 export default function Index() {
   const { brand, colors } = useBrand();

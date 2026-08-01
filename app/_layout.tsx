@@ -1,5 +1,6 @@
+import { BrandProvider } from "@/components/BrandProvider";
 import { Stack } from "expo-router";
-import { BrandProvider } from "../../components/BrandProvider";
+
 
 export default function RootLayout() {
     return (

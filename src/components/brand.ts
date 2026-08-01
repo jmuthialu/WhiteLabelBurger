@@ -34,10 +34,10 @@ const BRANDS: Record<string, BrandConfig> = {
       text: '#292929',
     },
     assets: {
-      icon: './assets/brands/mcd/icon.png',
-      splash: './assets/brands/mcd/splash-icon.png',
-      adaptiveIcon: './assets/brands/mcd/adaptive-icon.png',
-      favicon: './assets/brands/mcd/favicon.png',
+      icon: './src/assets/brands/mcd/icon.png',
+      splash: './src/assets/brands/mcd/splash-icon.png',
+      adaptiveIcon: './src/assets/brands/mcd/adaptive-icon.png',
+      favicon: './src/assets/brands/mcd/favicon.png',
     },
   },
   bk: {
@@ -53,10 +53,10 @@ const BRANDS: Record<string, BrandConfig> = {
       text: '#502314',
     },
     assets: {
-      icon: './assets/brands/bk/icon.png',
-      splash: './assets/brands/bk/splash-icon.png',
-      adaptiveIcon: './assets/brands/bk/adaptive-icon.png',
-      favicon: './assets/brands/bk/favicon.png',
+      icon: './src/assets/brands/bk/icon.png',
+      splash: './src/assets/brands/bk/splash-icon.png',
+      adaptiveIcon: './src/assets/brands/bk/adaptive-icon.png',
+      favicon: './src/assets/brands/bk/favicon.png',
     },
   },
 };

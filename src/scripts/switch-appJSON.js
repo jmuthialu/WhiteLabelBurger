@@ -12,8 +12,8 @@ if (!brandId) {
 }
 
 const brandConfigMap = {
-  mcd: 'config/credentials-mcd.json',
-  bk: 'config/credentials-bk.json'
+  mcd: 'src/config/app-mcd.json',
+  bk: 'src/config/app-bk.json'
 };
 
 const configFile = brandConfigMap[brandId];
@@ -23,9 +23,13 @@ if (!configFile) {
   process.exit(1);
 }
 
-const projectRoot = path.join(__dirname, '..');
-const sourceFile = path.join(projectRoot, configFile);
-const targetFile = path.join(projectRoot, 'credentials.json');
+const projectRoot = path.join(__dirname, '../..');
+console.log(`projectRoot: ${projectRoot}`) 
+
+const sourceFile = path.join(projectRoot, configFile); // config/app-mcd.json
+const targetFile = path.join(projectRoot, 'app.json'); // app.json
+console.log(`souceFile: ${sourceFile}`)
+console.log(`targetFile: ${targetFile}`)
 
 if (!fs.existsSync(sourceFile)) {
   console.error(`Configuration file not found: ${sourceFile}`);
@@ -35,6 +39,7 @@ if (!fs.existsSync(sourceFile)) {
 try {
   const config = fs.readFileSync(sourceFile, 'utf8');
   fs.writeFileSync(targetFile, config);
+  
   
   // Clear Metro cache to ensure new configuration is picked up
   const metroCacheDir = path.join(projectRoot, 'node_modules/.cache/metro');
