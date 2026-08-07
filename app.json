@@ -42,7 +42,11 @@
       "appDir": "src/app"
     },
     "extra": {
-      "brandId": "bk"
+      "brandId": "bk",
+      "router": {},
+      "eas": {
+        "projectId": "83b7f689-e240-4024-93c9-9a428bcae938"
+      }
     }
   }
 }

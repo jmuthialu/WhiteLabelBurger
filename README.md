@@ -1,6 +1,6 @@
 # README
 
-## iOS  
+## iOS  and Android
 - Expo managed config for iOS and Android.
 - No need to change anything in Xcode such as for any manual setups for scheme, bundleID etc 
 - Xcode project can be deleted anytime and recreated anytime from package scripts.
