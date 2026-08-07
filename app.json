@@ -15,12 +15,11 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./src/assets/images/android-icon-foreground.png",
-        "backgroundImage": "./src/assets/images/android-icon-background.png",
-        "monochromeImage": "./src/assets/images/android-icon-monochrome.png"
+        "backgroundColor": "#fef6e6",
+        "foregroundImage": "./src/assets/brands/bk/icon.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.jmuthialu.burgerplace.android.bk"
     },
     "web": {
       "output": "static",
@@ -43,11 +42,7 @@
       "appDir": "src/app"
     },
     "extra": {
-      "brandId": "bk",
-      "router": {},
-      "eas": {
-        "projectId": "83b7f689-e240-4024-93c9-9a428bcae938"
-      }
+      "brandId": "bk"
     }
   }
 }

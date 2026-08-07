@@ -9,7 +9,8 @@
     "start:bk": "node ./src/scripts/switch-appJSON.js bk && expo start",
     "iosexpobuild:mcd": "node ./src/scripts/switch-appJSON.js mcd && node ./src/scripts/switch-credentials.js mcd && eas build --platform ios --profile development",
     "iosexpobuild:bk": "node ./src/scripts/switch-appJSON.js bk && node ./src/scripts/switch-credentials.js bk && eas build --platform ios --profile development",
-    "android": "expo run:android",
+    "android:mcd": "rm -rf android && node ./src/scripts/switch-appJSON.js mcd && expo run:android --device",
+    "android:bk": "rm -rf android && node ./src/scripts/switch-appJSON.js bk && expo run:android --device",
     "web": "expo start --web",
     "lint": "expo lint",
     "reset-project": "node ./scripts/reset-project.js"
